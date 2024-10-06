@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    background-color: #FAFAF9;
+    height: 800px;
+    align-content: center;
+}
+
+main {
+    margin: 0 72px;
+    display: flex;
+    gap: 40px;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.right-side {
+    flex: 1;
+    position: relative;
+}
+
+.header-icon {
+    background-color: #F5C044;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.left-side>h1 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+}
+
+.left-side>p {
+    font-size: 1.25rem;
+    color: #52525A;
+}
+
+.list-item {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item>p {
+    font-size: 0.875rem;
+    color: #52525A;
+    display: flex;
+    gap: 10px;
+}
+
+
+.right-side>div {
+    height: 180px;
+    width: 350px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
+    padding: 35px;
+}
+
+.logo-stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.right-side img {
+    width: 90px;
+    margin-right: 10px;
+}
+
+.review-one {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.review-two {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.right-side>div>h2 {
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+
+
+.right-side>div>p {
+    font-size: 1rem;
+    color: #52525A;
+}
+
+@media screen and (max-width:640px) {
+
+    body{
+        height: auto;
+    }
+
+    main {
+        margin: 80px 30px;
+        flex-direction: column;
+        gap: 40px;
+        height: 870px;
+    }
+}
